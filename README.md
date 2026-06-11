@@ -65,6 +65,8 @@ Send Email
         ↓
 Recipient Inbox
 ```
+<img width="925" height="620" alt="image" src="https://github.com/user-attachments/assets/f73b3246-c941-4b5a-9470-b50ae65e7cd8" />
+
 
 ## 🚀 Running Locally
 
