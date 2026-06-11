@@ -20,4 +20,8 @@ jobs:
           python-version: '3.11'
 
       - name: Run Pulse
-        run: python main.py
+  env:
+    EMAIL_USER: ${{ secrets.EMAIL_USER }}
+    EMAIL_PASS: ${{ secrets.EMAIL_PASS }}
+    EMAIL_TO: ${{ secrets.EMAIL_TO }}
+  run: python main.py
