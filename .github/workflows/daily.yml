@@ -1,0 +1,23 @@
+name: Daily Pulse
+
+on:
+  schedule:
+    - cron: '30 2 * * *'
+
+  workflow_dispatch:
+
+jobs:
+  send-pulse:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run Pulse
+        run: python main.py
